@@ -14,7 +14,7 @@ public class TestActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		FBLoginManager fbLoginManager = new FBLoginManager(this, 200, "",
+		FBLoginManager fbLoginManager = new FBLoginManager(this, 400, "",
 				new String[] { "publish_stream" });
 		FBLoginWithOutApi fbLoginOutApi = new FBLoginWithOutApi(this,
 				"https://m.facebook.com/dialog/", new DiaLog(), fbLoginManager);
